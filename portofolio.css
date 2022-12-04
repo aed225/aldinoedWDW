@@ -1,0 +1,395 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Main */
+body {
+  height: 40vh;
+  background-color: rgb(30, 30, 30);
+}
+
+header {
+  height: 85vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 20px;
+  width: 100%;
+  height: 9vh;
+  font-family: "Viga", sans-serif;
+  color: rgb(255, 174, 23);
+  text-shadow: 0px 0px 3px black;
+  z-index: 2;
+  margin-top: 10px;
+}
+
+.brand {
+  margin-left: -30px;
+}
+
+.brand h3 {
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+.menu ul {
+  display: flex;
+  padding: 0 20px;
+  margin-right: -60px;
+}
+
+.navMenu {
+  margin: auto 20px;
+}
+
+.navMenu a {
+  color: rgb(255, 174, 23);
+}
+
+.navMenu:hover:not(.active)::after {
+  content: " ";
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+  margin: auto;
+  width: 50%;
+  margin-bottom: -8px;
+}
+
+.active a {
+  color: white;
+  cursor: default;
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.jumboCap {
+  color: white;
+  font-size: 1.25em;
+  width: 50%;
+  margin-left: 0px;
+}
+
+.jumboCap span {
+  color: rgb(255, 174, 23);
+}
+
+.jumboCap h4 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.jumboImg {
+  margin-left: -30px;
+}
+
+.jumboImg img {
+  width: 415px;
+  height: 326px;
+}
+
+.jumboButton {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  width: 70px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 15px;
+  margin-top: 25px;
+  padding-left: 17px;
+  cursor: pointer;
+}
+
+.jumboButton .button ~ :nth-child(2) {
+  background-color: rgb(255, 174, 23);
+  border: none;
+}
+
+.hire a {
+  margin-left: 3px;
+  margin-bottom: 2px;
+}
+
+.button a {
+  font-size: 14px;
+  color: white;
+}
+
+.skill,
+.events {
+  width: 85%;
+  margin: auto;
+}
+
+.skill h3,
+.events h3,
+.portfolio h3 {
+  margin-top: 15px;
+  text-align: center;
+  color: rgb(255, 174, 23);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4em;
+  margin-bottom: 50px;
+}
+
+.skill .baris,
+.events .baris {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+.card {
+  background-color: #eee;
+  width: 300px;
+  height: 250px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  padding-bottom: 3px;
+}
+
+.card img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 30%;
+  height: 450px;
+  margin: auto;
+  position: absolute;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+  margin-left: 60px;
+}
+
+.konten2 img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  height: 450px;
+  margin-left: -355px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+}
+
+.konten3 img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  height: 450px;
+  margin-left: -700px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+}
+
+.konten4 img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  height: 450px;
+  margin-left: -10px;
+  margin-top: -275px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+}
+
+.konten5 img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  height: 450px;
+  margin-left: -355px;
+  margin-top: -275px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+}
+
+.konten6 img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 30%;
+  height: 450px;
+  margin-left: -135px;
+  margin-top: -275px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+}
+
+.card img {
+  width: 300px;
+  height: 180px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.skill h4,
+.events h4 {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.konten6 h4 {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.skill p,
+.events p {
+  font-size: 14px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.events .konten1 img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 79%;
+  height: 450px;
+  margin-left: -7px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+}
+
+.konten7 img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  height: 450px;
+  margin-left: -700px;
+  margin-top: -255px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+}
+
+.portfolio .konten1 img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 25%;
+  height: 450px;
+  margin: auto;
+  position: absolute;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+  margin-left: 40px;
+}
+
+.portfolio .konten3 img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 24%;
+  height: 450px;
+  margin: auto;
+  position: absolute;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+  margin-top: 10px;
+  margin-left: -40px;
+}
+
+.portfolio .konten4 img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  height: 450px;
+  margin-left: -170px;
+  margin-top: -205px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+}
+.portfolio .konten6 img:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  height: 450px;
+  margin-left: -550px;
+  margin-top: -255px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px black;
+  transform: scaleX(1.2);
+  transform: scaleY(1.2);
+  transition: 1s;
+}
+
+footer {
+  background-color: rgb(255, 174, 23);
+  width: 100%;
+  height: 120px;
+  padding: 30px;
+  margin-top: 60px;
+}
+
+footer p {
+  text-align: center;
+  font-family: monospace;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.social {
+  display: flex;
+  width: 15%;
+  margin: 20px auto;
+}
+
+.medsos img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  margin: auto 5px;
+}

@@ -1,0 +1,295 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Main */
+body {
+  height: 40vh;
+  background-color: rgb(30, 30, 30);
+}
+
+header {
+  height: 85vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 20px;
+  width: 100%;
+  height: 9vh;
+  font-family: "Viga", sans-serif;
+  color: rgb(255, 174, 23);
+  text-shadow: 0px 0px 3px black;
+  z-index: 2;
+  margin-top: 10px;
+}
+
+.brand {
+  margin-left: -30px;
+}
+
+.brand h3 {
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+.menu ul {
+  display: flex;
+  padding: 0 20px;
+  margin-right: -60px;
+}
+
+.navMenu {
+  margin: auto 20px;
+}
+
+.navMenu a {
+  color: rgb(255, 174, 23);
+}
+
+.navMenu:hover:not(.active)::after {
+  content: " ";
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+  margin: auto;
+  width: 50%;
+  margin-bottom: -8px;
+}
+
+.active a {
+  color: white;
+  cursor: default;
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.jumboCap {
+  color: white;
+  font-size: 1.25em;
+  width: 50%;
+  padding-left: 20px;
+}
+
+.jumboCap span {
+  color: rgb(255, 174, 23);
+}
+
+.jumboCap h4 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.jumboImg {
+  /* width: 50vh; */
+  margin-left: -30px;
+  padding-bottom: 15px;
+}
+
+.jumboImg img {
+  width: 425px;
+  height: 276px;
+}
+
+.jumboButton {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  width: 70px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 15px;
+  margin-top: 25px;
+  padding-left: 17px;
+  cursor: pointer;
+}
+
+.jumboButton .button ~ :nth-child(2) {
+  background-color: rgb(255, 174, 23);
+  border: none;
+}
+
+.button a {
+  font-size: 14px;
+  color: white;
+}
+
+section {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+section h3 {
+  margin-top: 15px;
+  text-align: center;
+  color: rgb(255, 174, 23);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4em;
+  margin-bottom: 40px;
+}
+
+.edu .kolom {
+  margin-left: 65px;
+}
+
+.personal img {
+  width: 280px;
+  height: 290px;
+  margin-top: 0px;
+  opacity: 0.8;
+}
+
+.edu .mainKonten {
+  flex-direction: column;
+  text-align: right;
+}
+
+.edu p {
+  text-align: right;
+}
+
+.kolom {
+  display: flex;
+  padding-left: 60px;
+}
+
+.mainKonten {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  padding-top: 20px;
+}
+
+.subKonten {
+  display: flex;
+  color: #666;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: right;
+}
+
+.edu .mainKonten {
+  justify-content: space-between;
+}
+
+.edu .subKonten {
+  display: flex;
+  color: #666;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: right;
+  justify-content: space-evenly;
+  margin-left: -180px;
+}
+
+.edu .data {
+  margin-right: 10px;
+}
+
+.edu .simbol {
+  margin-right: 50px;
+  margin-left: 40px;
+}
+
+.edu .simbol p {
+  text-align: center;
+}
+
+.personal .simbol li ~ :nth-child(2) {
+  margin-top: -25px;
+}
+
+.edu .simbol li ~ :nth-child(even) {
+  margin-bottom: 8px;
+  margin-top: -25px;
+}
+
+.edu img {
+  width: 325px;
+  height: 240px;
+  margin-top: 20px;
+  margin-right: 35px;
+  opacity: 0.8;
+}
+
+.skill .kolom {
+  margin-left: 5px;
+}
+
+.skill img {
+  width: 290px;
+  margin-left: -5px;
+  margin-top: -10px;
+}
+
+.simbol {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.data {
+  margin-left: 40px;
+}
+
+.data li p ~ :first-child {
+  font-size: 2rem;
+  color: white;
+}
+
+footer {
+  background-color: rgb(255, 174, 23);
+  width: 100%;
+  height: 120px;
+  padding: 30px;
+}
+
+footer p {
+  text-align: center;
+  font-family: monospace;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.social {
+  display: flex;
+  width: 15%;
+  margin: 20px auto;
+}
+
+.medsos img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  margin: auto 5px;
+}
